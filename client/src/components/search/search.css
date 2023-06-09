@@ -1,0 +1,42 @@
+.searchpage{
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.navbox{
+    display: flex;
+    background: #8181c1;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.nav-input{
+    display: flex;
+    align-items: center;
+}
+
+.nav-input input{
+    min-width: 14rem;
+    padding: 0.5rem; 
+    border: 2px solid grey;
+    border-radius: 4rem;
+    font-size: 1.39rem;
+    border-bottom-right-radius: 0rem;
+    border-start-end-radius: 0rem;
+}
+
+.nav-input button{
+    border-radius: 0rem;
+    border-bottom-right-radius: 2rem;
+    border-start-end-radius: 2rem;
+}
+
+
+.boxOne{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
