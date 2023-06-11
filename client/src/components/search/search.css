@@ -1,6 +1,6 @@
 .searchpage{
     min-height: 100vh;
-    width: 100vw;
+    width: 99vw;
 }
 
 .navbox{
@@ -32,6 +32,12 @@
     border-start-end-radius: 2rem;
 }
 
+.card{
+    padding: 2rem;
+    background: #7e81d6c4;
+    margin: 3rem;
+    border-radius: 7rem;
+}
 
 .boxOne{
     display: flex;
@@ -39,4 +45,37 @@
     justify-content: center;
     align-items: center;
     gap: 4rem;
+}
+
+.imageBox img{
+    width: 17vw;
+}
+
+.boxtwo div p{
+    text-align: justify;
+}
+@media screen and (max-width: 520px) {
+    .nav-input input{
+        min-width: 10rem;
+        font-size: 1rem;
+    }
+    .nav-input button{
+        font-size: 0.8rem;
+    }
+    .nav-logout button{
+        font-size: 0.7rem;
+    }
+    .card{
+        margin: 1rem;
+        border-radius: 4rem;
+    }
+    .imageBox img{
+        width: 34vw;
+    }
+    .details{
+        font-size: 0.7rem;
+    }
+    .boxtwo div p{
+        font-size: 0.9rem;
+    }
 }

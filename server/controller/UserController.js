@@ -80,7 +80,7 @@ export async function search(req, res){
         .then(response=>{
             return res.status(200).json(response.data)
         })
-        .catch((error) =>{
+        .catch(error =>{
             return res.status(500).json({error: "Error fetching data from tv maze API"})
         })
 
