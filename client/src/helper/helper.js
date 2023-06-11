@@ -1,11 +1,10 @@
 import axios from 'axios'
 
-axios.defaults.baseURL = 'http://localhost:8090'
+axios.defaults.baseURL = 'https://tvmaze-backend.onrender.com'
 
 export async function registerUser(values){
     try {
         const {data: {message}, status} = await axios.post('/api/register',values)
-        console.log(message)        
         return Promise.resolve(message)
     } catch (error) {
         return Promise.reject(error.response.data.message)

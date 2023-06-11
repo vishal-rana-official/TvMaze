@@ -11,7 +11,7 @@ const Search = () => {
     const [show, setShow] = useState([]);
     const navigate = useNavigate()
     const token = localStorage.getItem('token')
-    axios.defaults.baseURL = 'http://localhost:8090'
+    axios.defaults.baseURL = 'https://tvmaze-backend.onrender.com'
 
     const handleSearch = useCallback(async () => {
         try {
@@ -29,7 +29,6 @@ const Search = () => {
     }, [title])
 
     const handleLogout = () => {
-        console.log('logout click')
         localStorage.removeItem('token')
         toast.success("Logout Successfully")
         setTimeout(() => {

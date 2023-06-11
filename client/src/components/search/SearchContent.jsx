@@ -2,7 +2,6 @@ import React from 'react'
 import Poster from '../../images/Poster.jpg'
 
 const SearchContent = ({ data }) => {
-    console.log(data)
     return (
         <div className='search-feed'>
             {data.map((ele, index) => (
